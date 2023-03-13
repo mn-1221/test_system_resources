@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: httpd-deployment
-        image: image-registry.openshift-image-registry.svc:5000/mn-1221-dev/httpd-test-image:latest
+        image: image-registry.openshift-image-registry.svc:5000/mn-1221-dev/httpd-test-image-ex01:latest
         ports:
         - containerPort: 8080
