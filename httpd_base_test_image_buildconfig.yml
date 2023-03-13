@@ -3,7 +3,7 @@ apiVersion: image.openshift.io/v1
 metadata:
   labels:
     application: httpd-base-test-image
-  name: httpd-base-test-image
+  name: httpd-base-test-image-ex01
   annotations:
     description: 'httpd base image for AJP test'
 
@@ -11,14 +11,14 @@ metadata:
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: httpd-base-test-image-build
+  name: httpd-base-test-image-ex01-build
   labels:
-    build: httpd-base-test-image-build
+    build: httpd-base-test-image-ex01-build
 spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'httpd-base-test-image:latest'
+      name: 'httpd-base-test-image-ex01:latest'
   strategy:
     type: Docker
     dockerStrategy:
