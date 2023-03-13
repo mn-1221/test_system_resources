@@ -26,4 +26,4 @@ spec:
   source:
     type: Git
     git:
-      uri: 'https://github.com/mn-1221/httpd_test_image.git'
+      uri: 'https://github.com/mn-1221/httpd_base_test_image.git'
