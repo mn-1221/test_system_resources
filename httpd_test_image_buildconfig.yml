@@ -11,21 +11,23 @@ metadata:
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: httpd-test-image-ex01-build
+  name: httpd-test-image-build
+  labels:
+    build: httpd-test-image-build
 spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'httpd-test-image-ex01:latest'
+      name: 'httpd-test-image:latest'
   strategy:
     type: Source
     sourceStrategy:
       from:
         kind: ImageStreamTag
-        name: 'httpd-base-test-image-ex01:latest'
+        name: 'httpd-base-test-image:latest'
   source:
     type: Git
     git:
-      uri: 'https://github.com/mn-1221/httpd_test_image-ex01.git'
+      uri: 'https://github.com/mn-1221/httpd_test_image.git'
     contextDir:
       
