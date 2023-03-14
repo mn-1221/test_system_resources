@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: jws-deployment
-        image: image-registry.openshift-image-registry.svc:5000/y0k0yama16ak1-dev/jws-test-image:latest
+        image: image-registry.openshift-image-registry.svc:5000/mn-1221-dev/jws-test-image:latest
         ports:
         - containerPort: 8009
